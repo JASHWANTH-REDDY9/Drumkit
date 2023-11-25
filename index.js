@@ -11,7 +11,7 @@ for (let i = 0; i < document.querySelectorAll(".drum").length; i++) {
         audio[i].play();
         buttonAnimation(this.innerHTML);
     });
-    document.querySelectorAll(".drum")[i].addEventListener("keydown", function (event) {
+    document.addEventListener("keydown", function (event) {
         var currentKey = event.key;
         switch (currentKey) {
             case "w":
